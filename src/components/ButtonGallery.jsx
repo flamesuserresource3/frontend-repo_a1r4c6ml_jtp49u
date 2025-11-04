@@ -8,6 +8,14 @@ export default function ButtonGallery() {
       <h2 className="text-xl font-semibold text-white/90 mb-4">Gallery</h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="p-4 rounded-lg bg-white/5 border border-white/10">
+          <p className="text-sm text-white/60 mb-3">Neon</p>
+          <div className="flex flex-wrap gap-3">
+            <AnimatedButton variant="neon" leftIcon={Rocket}>Launch</AnimatedButton>
+            <AnimatedButton variant="neon" rightIcon={ArrowRight} size="sm">Continue</AnimatedButton>
+            <AnimatedButton variant="neon" size="lg">Get Started</AnimatedButton>
+          </div>
+        </div>
+        <div className="p-4 rounded-lg bg-white/5 border border-white/10">
           <p className="text-sm text-white/60 mb-3">Glow</p>
           <div className="flex flex-wrap gap-3">
             <AnimatedButton variant="glow" leftIcon={Rocket}>Launch</AnimatedButton>

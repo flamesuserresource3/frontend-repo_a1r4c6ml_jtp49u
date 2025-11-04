@@ -3,6 +3,7 @@ import AnimatedButton from './AnimatedButton';
 import { Rocket, ArrowRight, Star } from 'lucide-react';
 
 const VARIANTS = [
+  { key: 'neon', label: 'Neon' },
   { key: 'glow', label: 'Glow' },
   { key: 'gradient', label: 'Gradient' },
   { key: 'outline', label: 'Outline' },
@@ -23,7 +24,7 @@ const ICONS = [
 ];
 
 export default function Playground() {
-  const [variant, setVariant] = useState('glow');
+  const [variant, setVariant] = useState('neon');
   const [size, setSize] = useState('md');
   const [label, setLabel] = useState('Click me');
   const [leftIcon, setLeftIcon] = useState('rocket');
@@ -123,7 +124,7 @@ export default function Playground() {
                 value={label}
                 onChange={(e) => setLabel(e.target.value)}
                 placeholder="Button text"
-                className="w-full rounded-md bg-white/10 border border-white/10 px-3 py-2 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full rounded-md bg-white/10 border border-white/10 px-3 py-2 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
               />
             </div>
           </div>
